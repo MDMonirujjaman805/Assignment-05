@@ -15,7 +15,7 @@
   <div class="navbar-start">
      <a class="btn btn-ghost bg-[#B4F461] text-xl" href="./blog.html">Blog</a>
   </div>
-  <div class="navbar-center border ">
+  <div class="navbar-center">
     <img src="./assets/logo.png" alt="logo" class="hidden md:block lg:block">
     <a class="hidden md:block lg:block btn btn-ghost font-bold text-xl mt-4">Donation Bangladesh</a>
   </div>
@@ -48,10 +48,10 @@
           </div>
             <h2 class="text-xl font-bold my-4">Donate for Flood at Noakhali</h2>
             <p class="text-gray-600 mt-2">
-              The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.
+              Noakhali, Bangladesh, is facing severe flooding, leaving many families homeless and in urgent need of food, shelter, and medical aid. Donations can help provide essential relief, including clean water, dry food, and emergency supplies. Support trusted charities or local organizations to assist flood victims and rebuild affected communities.
             </p>
             <input type="number" placeholder="Write Donation Amount" class="w-full p-2 border mt-4 rounded">
-            <button class="w-full bg-green-500 text-white py-2 mt-4 rounded">Donate Now</button>
+            <button onclick="openModal()" class="w-full bg-green-500 text-white py-2 mt-4 rounded">Donate Now</button>
         </div>
     </div>
 </div>
@@ -70,10 +70,10 @@
           </div>
             <h2 class="text-xl font-bold my-4">Donate for Flood Relief in Feni,Bangladesh</h2>
             <p class="text-gray-600 mt-2">
-              The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.
+              Feni, Bangladesh, is experiencing devastating floods, displacing families and causing severe damage. Urgent relief is needed, including food, clean water, shelter, and medical aid. Your donation can help provide emergency assistance and support recovery efforts. Contribute through trusted charities or local organizations to aid flood victims in Feni.
             </p>
             <input type="number" placeholder="Write Donation Amount" class="w-full p-2 border mt-4 rounded">
-            <button class="w-full bg-green-500 text-white py-2 mt-4 rounded">Donate Now</button>
+            <button onclick="openModal()" class="w-full bg-green-500 text-white py-2 mt-4 rounded">Donate Now</button>
         </div>
     </div>
 </div>
@@ -92,13 +92,29 @@
           </div>
             <h2 class="text-xl font-bold my-4">Aid for Injured in the Quota Movement</h2>
             <p class="text-gray-600 mt-2">
-              The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.
+              The Quota Movement in Bangladesh has led to clashes, leaving many students injured. Urgent aid is needed for medical treatment, legal support, and rehabilitation. Donations can help cover hospital expenses, medicine, and emergency care. Support trusted organizations or local initiatives to assist the injured and ensure justice for victims.
             </p>
             <input type="number" placeholder="Write Donation Amount" class="w-full p-2 border mt-4 rounded">
-            <button class="w-full bg-green-500 text-white py-2 mt-4 rounded">Donate Now</button>
+            <button onclick="openModal()" class="w-full bg-green-500 text-white py-2 mt-4 rounded">Donate Now</button>
         </div>
     </div>
 </div>
    <!-- card 03 end -->
+
+    <!-- model-01  -->
+  <div id="donationModal" class="fixed inset-0 hidden items-center justify-center bg-black bg-opacity-50">
+    <div class="bg-white p-6 rounded-lg shadow-lg text-center w-96">
+        <h2 class="text-2xl font-bold text-gray-800">🎉 Congrats!</h2>
+        <img src="./assets/coin.png" alt="coin" class="mx-auto my-2">
+        <p class="text-gray-800 mt-2">You have donated for Humankind</p>
+        <p class="text-gray-600 font-semibold text-lg mt-2">Successfully</p>
+        <button onclick="closeModal()" class="mt-4 px-4 py-2 bg-gray-300 text-black rounded-lg shadow-md ">
+            Close Confirmation
+        </button>
+    </div>
+</div>
+    <!-- model-01  -->
+
+    <script src="./js/utilities.js"></script>
 </body>
 </html>
