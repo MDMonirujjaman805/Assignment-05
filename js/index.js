@@ -68,7 +68,6 @@ const noakhaliTital = document.getElementById('noakhali-tital').innerText;
 const feniTital = document.getElementById('feni-tital').innerText;
 const quotaTital = document.getElementById('quota-tital').innerText;
 const historyContainer = document.getElementById('history-container').innerText;
-
 // History Tab Section 
 const historyButton = document.getElementById('history-button');
 historyButton.addEventListener('click',function(){
@@ -129,7 +128,6 @@ historyButton.addEventListener('click',function(){
         alert("You cannot donate more than your main balance (5500 Taka)!");
         return;
     }
-    
     if (quotaInputFieldValue > quotaBalance) {
         alert("Quota account does not have enough balance!");
         return;
